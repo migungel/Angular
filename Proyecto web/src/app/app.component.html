@@ -1,0 +1,25 @@
+<app-encabezado></app-encabezado>
+
+<!--div *ngFor="let marca of arrayMarcas">
+    <div class="lista_productos">
+        <app-marca [marca]="marca.marca"></app-marca>
+        <app-card-imagen [urlMarcas]="marca.url" 
+        [nombre]="marca.nombre"
+        [valor]="marca.valor"
+        [cantidad]="marca.cantidad"
+        [id]="marca.id"
+        (clickBtnRegistrar)="imprimirResultados($event)"></app-card-imagen>
+    </div>
+</div-->
+
+<div *ngFor="let personaje of arrSimpsons">
+    <div class="lista_productos">
+        <!--app-marca [marca]="personaje.marca"></app-marca-->
+        <app-card-imagen [urlMarcas]="personaje.image" 
+        [nombre]="personaje.character"
+        ></app-card-imagen>
+    </div>
+</div>
+
+
+<app-footer></app-footer>
